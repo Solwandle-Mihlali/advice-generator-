@@ -1,0 +1,100 @@
+@import url("../index.css");
+
+* {
+  font-family: sans-serif;
+}
+.adviceCont {
+  background: var(--bgLight);
+  width: 25%;
+  height: 30vh;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-tracks: flex-start;
+}
+
+.adviceNumber {
+  width: 100%;
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(23, 179, 23);
+  font-size: 0.7rem;
+  padding: 1rem;
+}
+
+.adviceActual {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+}
+
+.dividerSection {
+  width: 100%;
+  height: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 3%;
+}
+
+.dividerSection img {
+  width: 90%;
+}
+
+.dice {
+  background: rgb(23, 179, 23);
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+@media screen and (min-width: 360px) and (max-width: 600px) {
+  .adviceCont {
+    background: var(--bgLight);
+    width: 90%;
+    height: 35vh;
+    justify-content: center;
+  }
+
+  .adviceNumber {
+
+    font-size: 0.8rem;
+
+  }
+
+  .adviceActual {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .adviceCont {
+    background: var(--bgLight);
+    width: 50%;
+    height: 35vh;
+    justify-content: center;
+  }
+
+  .adviceNumber {
+
+    font-size: 0.8rem;
+
+  }
+
+  .adviceActual {
+    font-size: 0.7rem;
+    width: 90%;
+  }
+}
