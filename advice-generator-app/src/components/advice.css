@@ -6,13 +6,13 @@
 .adviceCont {
   background: var(--bgLight);
   width: 25%;
-  height: 30vh;
+  min-height: 33vh;
   border-radius: 10px;
   box-shadow: 3px 3px 10px black;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-tracks: flex-start;
+  justify-content: flex-start;
 }
 
 .adviceNumber {
@@ -60,6 +60,14 @@
   color: white;
 }
 
+
+.dice:hover {
+  height: 50px;
+  width: 50px;
+  background: rgb(69, 233, 69);
+  box-shadow: 3px 3px 10px rgb(45, 185, 45);
+
+}
 @media screen and (min-width: 360px) and (max-width: 600px) {
   .adviceCont {
     background: var(--bgLight);

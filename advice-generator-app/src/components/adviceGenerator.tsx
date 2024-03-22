@@ -15,7 +15,7 @@ const AdviceGenerator: React.FC = () => {
   const [responseHolder, setResponseHolder] = useState<AdviceResponse>()
   const [adviceTxt, setAdviceTxt] = useState<AdviceResponse>();
 
-  useEffect(() => {
+
     const fetchAdvice = async () => {
       try {
         const res = await fetch("https://api.adviceslip.com/advice").then(async (response) => {
@@ -32,10 +32,10 @@ const AdviceGenerator: React.FC = () => {
     
     };
 
-    fetchAdvice()
+
 
   
-  }, [setAdviceTxt]);
+
 
   console.log("data" + " "+ responseHolder)
 
@@ -49,7 +49,9 @@ const AdviceGenerator: React.FC = () => {
      
       </div>
      
-      <span className="dice">
+      <span className="dice" onClick={()=>{
+         fetchAdvice()
+      }}>
          <img src={images.dice} alt="" />
       </span>
     </div>
