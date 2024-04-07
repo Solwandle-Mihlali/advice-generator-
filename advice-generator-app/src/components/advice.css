@@ -27,13 +27,17 @@
 }
 
 .adviceActual {
-  width: 100%;
+  width: 90%;
+  padding-left: 1rem;
+  padding-right: 1rem;
   height: 10vh;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   text-align: center;
+  margin-bottom: 5%;
+
 }
 
 .dividerSection {
@@ -60,13 +64,11 @@
   color: white;
 }
 
-
 .dice:hover {
-  height: 50px;
-  width: 50px;
+  height: 43.5px;
+  width: 43.5px;
   background: rgb(69, 233, 69);
   box-shadow: 3px 3px 10px rgb(45, 185, 45);
-
 }
 @media screen and (min-width: 360px) and (max-width: 600px) {
   .adviceCont {
@@ -77,9 +79,7 @@
   }
 
   .adviceNumber {
-
     font-size: 0.8rem;
-
   }
 
   .adviceActual {
@@ -96,9 +96,7 @@
   }
 
   .adviceNumber {
-
     font-size: 0.8rem;
-
   }
 
   .adviceActual {
